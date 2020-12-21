@@ -146,3 +146,5 @@ models/
 *.h5
 *.pkl
 *.pth
+*.docx
+*.doc
