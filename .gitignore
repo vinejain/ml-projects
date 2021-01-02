@@ -144,6 +144,7 @@ models/
 # data files
 *.csv
 *.h5
+*.pkl
 *.pth
 *.docx
 *.doc

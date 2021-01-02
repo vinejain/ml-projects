@@ -26,6 +26,10 @@ def predict(test_data_path, model_type, model_path):
         
         clf = joblib.load(os.path.join(model_path, f"{model_type}_{FOLD}.pkl"))
         
+        # [predict() vs predict_proba()] https://discuss.analyticsvidhya.com/t/what-is-the-difference-between-predict-and-predict-proba/67376
+        # [Understanding predict_proba() output] https://discuss.analyticsvidhya.com/t/what-is-the-difference-between-predict-and-predict-proba/67376/3
+        # Observing the sample submission, target column has 0.5 values, which means we would need probability of 1
+
         df = df[cols]
         preds = clf.predict_proba(df)[:, 1]
 
