@@ -49,4 +49,4 @@ if __name__ == "__main__":
                          model_type="randomforest", 
                          model_path="models/")
     submission.loc[:, "id"] = submission.loc[:, "id"].astype(int)
-    submission.to_csv(f"models/rf_submission.csv", index=False)
+    submission.to_csv(f"models/rf_output.csv", index=False)

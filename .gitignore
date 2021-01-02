@@ -148,3 +148,5 @@ models/
 *.pth
 *.docx
 *.doc
+*.ipynb
+
