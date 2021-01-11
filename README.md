@@ -2,10 +2,6 @@
 
 A generic model dispatcher framework for binary classification problems. No need to start from scratch, model can be updated in and chosen from the dispatcher.
 
-- **Instructions**
-
-
-
 1) Open Terminal and clone the directory
 
 ```
@@ -25,11 +21,7 @@ sh run.sh
 ```
 
 
-- **Description**
-
-
-
-**INPUT**
+ - **INPUT**
 
 Create a directory INPUT and fetch the categorical data from below link
 https://www.kaggle.com/c/cat-in-the-dat/data)
