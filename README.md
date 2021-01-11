@@ -8,20 +8,43 @@ A generic model dispatcher framework for binary classification problems. No need
 git clone https://github.com/vinejain/random-forest-classifier-framework.git
 ```
 
-2) Change directory to /random-forest-classifier-framework/src
+2) Create a directory INPUT and fetch the categorical data. 
+Make sure your Kaggle API key (kaggle.json) is located in your C:\Users\user\.kaggle. If you're not sure what kaggle.json is, refer below links first and download your key
+
+https://github.com/Kaggle/kaggle-api
+https://www.kaggle.com/docs/api
+
+or manually download data from below link
+https://www.kaggle.com/c/cat-in-the-dat/data)
 
 ```
-cd /random-forest-classifier-framework/src
+mkdir input
+cd /input
+pip install kaggle
+kaggle competitions download -c cat-in-the-dat
 ```
 
-3) Execute the shell script 'run.sh'
+3) Unzip the downloaded file and discard zip
 
 ```
-sh run.sh
+ls
+unzip cat-in-the-dat.zip -d ./
+rm *.zip
 ```
 
+4) Check train.csv
 
- - **INPUT**
+```
+head train.csv
+```
+
+Execute the shell script 'run.sh'
+
+```
+sh src/run.sh
+```
+
+**INPUT**
 
 Create a directory INPUT and fetch the categorical data from below link
 https://www.kaggle.com/c/cat-in-the-dat/data)
