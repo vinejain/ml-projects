@@ -4,6 +4,8 @@ A generic model dispatcher framework for binary classification problems. No need
 
 - **Instructions**
 
+
+
 1) Open Terminal and clone the directory
 
 ```
@@ -22,7 +24,9 @@ cd /random-forest-classifier-framework/src
 sh run.sh
 ```
 
+
 - **Description**
+
 
 
 **INPUT**
