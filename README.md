@@ -2,6 +2,26 @@
 
 A generic model dispatcher framework for binary classification problems. No need to start from scratch, model can be updated in and chosen from the dispatcher.
 
+**Instructions:**
+
+1) Open Terminal and clone the directory
+
+```
+git clone https://github.com/vinejain/random-forest-classifier-framework.git
+```
+
+2) Change directory to /random-forest-classifier-framework/src
+
+```
+cd /random-forest-classifier-framework/src
+```
+
+3) Execute the shell script 'run.sh'
+
+```
+sh run.sh
+```
+
 **Description:**
 
 
