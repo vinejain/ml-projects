@@ -9,13 +9,14 @@ git clone https://github.com/vinejain/random-forest-classifier-framework.git
 ```
 
 2) Create a directory INPUT and fetch the categorical data. 
-Make sure your Kaggle API key (kaggle.json) is located in your C:\Users\user\.kaggle. If you're not sure what kaggle.json is, refer below links first and download your key
+Make sure your Kaggle API key (kaggle.json) is located in your C:\Users\user\.kaggle.
+If you're not sure what kaggle.json is, refer below links first and download your key
 
-https://github.com/Kaggle/kaggle-api
-https://www.kaggle.com/docs/api
+- https://github.com/Kaggle/kaggle-api
+- https://www.kaggle.com/docs/api
 
 or manually download data from below link
-https://www.kaggle.com/c/cat-in-the-dat/data)
+- https://www.kaggle.com/c/cat-in-the-dat/data)
 
 ```
 mkdir input
