@@ -16,7 +16,7 @@ If you're not sure what kaggle.json is, refer below links first and download you
 - https://www.kaggle.com/docs/api
 
 or manually download data from below link
-- https://www.kaggle.com/c/cat-in-the-dat/data)
+- https://www.kaggle.com/c/cat-in-the-dat/data
 
 ```
 mkdir input
@@ -39,21 +39,24 @@ rm *.zip
 head train.csv
 ```
 
-Execute the shell script 'run.sh'
+5) Activate the kaggle environment
+
+```
+cd ..
+./kaggle-env/Scripts/activate.bat
+```
+
+6) Create a directory MODELS where TRAIN.PY will save the model using joblib
+
+```
+mkdir models
+```
+
+7) Execute the shell script 'run.sh'
 
 ```
 sh src/run.sh
 ```
-
-**INPUT**
-
-Create a directory INPUT and fetch the categorical data from below link
-https://www.kaggle.com/c/cat-in-the-dat/data)
-
-
-**MODELS**
-
-Create a directory MODELS where TRAIN.PY will save the model using joblib
 
 **DISPATCHER**
 
@@ -61,9 +64,7 @@ SRC/DISPATCHER.py dispatches the required model
 
 **K-FOLD Cross Validation**
 
-SRC/CREATE_FOLDS.py creates Stratified Folds with 5 splits on the training dataset, and saves output file in INPUT/TRAIN_FOLDS.csv
-
-See new column 'Fold'
+SRC/CREATE_FOLDS.py creates Stratified Folds with 5 splits on the training dataset, and saves output file in INPUT/TRAIN_FOLDS.csv. See new column 'Fold'
 
 **TRAINING**
 
@@ -90,7 +91,3 @@ FOLD=2 python -m src.train
 FOLD=3 python -m src.train
 FOLD=4 python -m src.train
 python -m src.predict
-
-OPEN TERMINAL and RUN below command to run the model:
-    
-$ sh src/run.sh randomforest
